@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CodeBuddy</title>
+    <title>CodeMate</title>
     <link rel="stylesheet" href="style.css" class="style">
 
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
@@ -19,17 +19,17 @@
                     <iconify-icon icon="bi:plus-lg"></iconify-icon> New Chat
                 </button>
                 <ul class="chats">
-                    <li>
+                    <li class="chat">
                         <div>
                             <iconify-icon icon="bi:chat-left-text" class="icon"></iconify-icon>
                             <span class="chat-title" contenteditable>New Chat</span>
                         </div>
                         <div>
                             <iconify-icon icon="bi:trash3" class="icon" onclick="removeChat(this)"></iconify-icon>
-                            <iconify-icon icon="bi:pencil-square" class="icon" onclick="updateChatTitle(this)"></iconify-icon>
+                            <iconify-icon icon="bi:pencil-square" class="icon" class="chat" onclick="updateChatTitle(this)"></iconify-icon>
                         </div>
                     </li>
-                    <li>
+                    <li class="chat">
                         <div>
                             <iconify-icon icon="bi:chat-left-text" class="icon"></iconify-icon>
                             <span class="chat-title" contenteditable>New Chat</span>
@@ -60,10 +60,10 @@
 
     <main>
         <div class="heading">
-            <h3>CodeBuddy</h3></div>
+            <h3>CodeMate</h3></div>
         <div class="hints">
-            <img src="logo.jfif" alt="" class="logo"> 
-            <p>Enter your message to start a chat. This could be a code you want to refactor or change the language or improve the quality of the code.</p> 
+            <img src="logo.jpeg" alt="" class="logo"> 
+            <p>Enter your message to start a chat!.<br><br> This could be a code you want to refactor or change the language or <br><br> Improve the quality of the code.</p> 
         </div>
         <div class="qna">
             <div class="result">
@@ -81,14 +81,14 @@
         </div>
         
         <!-- Navigation buttons -->
-        <div class="nav-top">
+        <!-- <div class="nav-top"> -->
             <!-- Add buttons for Code Analysis and Optimization and Code Documentation Generation -->
-            <div class="actions">
+            <!-- <div class="actions">
                 <button id="analyze">Code Analysis & Optimization</button>
                 <button id="generate-docs">Code Documentation Generation</button>
             </div>
-        </div>
-
+        </div> -->
+        <br>
         <div class="request">
             <iconify-icon icon="bi:person-fill-gear" class="icon"></iconify-icon>
             <input type="text" placeholder="Provide a prompt ..." autofocus>

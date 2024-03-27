@@ -1,6 +1,6 @@
 :root{
-    --primary: linear-gradient(45deg, #2442bb, #335af5);
-    --dark-mode: linear-gradient(45deg, #121e4e, #284782);
+    --primary: linear-gradient(45deg, #1A3C40, #1A3C40);
+    --dark-mode: linear-gradient(45deg, #1D5C63, #1D5C63);
     --text-color: #fff;
     --scrollbar: #fff;
 
@@ -50,12 +50,18 @@ aside nav .nav-top ul::-webkit-scrollbar-thumb{
 ul {
     list-style: none;
 }
+.chat {
+    border: 0.1rem solid #fff; 
+    background-color: #1A3C40!important;
+}
 
 ul li {
     padding: 1.2rem 1rem;
     font-size: 1.4rem;
     border-radius: .6rem;
     transition: .2s ease-in-out;
+    /* background-color: #1A3C40!important; */
+
 }
 
 ul li:hover{
@@ -113,8 +119,8 @@ aside nav button{
     transition: .2s ease-in-out;
 }
 aside nav button:hover{
-    background-color: #fff;
-    color: #111;
+    background-color: #24535a;
+    color: #0a0a0a;
 }
 
 aside nav .nav-top ul{
@@ -166,6 +172,7 @@ main .hints, .result div{
 
 main .hints{
     width: 100%;
+    font-size:larger;
     padding: 2rem;
     border-radius: 1rem;
 }

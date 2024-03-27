@@ -43,7 +43,7 @@ const app = document.querySelector('.app'),
 
     function addNewChat(){
         chats.innerHTML += `
-        <li>
+        <li class="chat">
                         <div>
                             <iconify-icon icon="bi:chat-left-text" class="icon"></iconify-icon>
                             <span class="chat-title" contenteditable>New Chat</span>
@@ -57,7 +57,8 @@ const app = document.querySelector('.app'),
     }
 
     const removeChat = (el)=> el.parentElement.parentElement.remove();
-    const updateChatTitle = (el)=> el.parentElement.previousElementSibling.lastElementChild.focus();
+    const updateChatTitle = (el)=> el.parentElement.previousElementSibling.lastElementChild.focus();   
+        
 
     //Displaying user question & bot Answer
 
